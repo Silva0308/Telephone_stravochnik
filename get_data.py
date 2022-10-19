@@ -27,5 +27,3 @@ def data_entry():
         pb[key].append(des[i])
     return pb
 
-
-print(data_entry())
