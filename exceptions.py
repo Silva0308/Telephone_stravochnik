@@ -1,11 +1,18 @@
 from log import error_enter
-from menu import input_contact_menu_choice
 
 
-def choice():
+def user_choice():
     try:
         choice1 = int(input('Выберите пункт меню: '))
     except ValueError:
-        print('Неверный пункт меню')
+        print('Ошибка ввода')
         error_enter()
-        return input_contact_menu_choice()
+    return choice1
+
+def data_search():
+    try:
+        search = input('Введите данные  для поска контакта: ')
+    except ValueError:
+        print('Ошибка ввода')
+        error_enter()
+    return search
