@@ -14,3 +14,4 @@ def adding():
         b_t.write(f'№ {new_key + 1}\nФамилия: {to_add[0]}\nИмя: {to_add[1]}\nНомер телефона: {to_add[2]}\nОписание: {to_add[3]}\n\n\n')
     with open('last_key.txt', "w", encoding='utf-8') as my_f:
         my_f.write(f"last_key = {new_key + 1}")
+    return to_add
